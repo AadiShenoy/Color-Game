@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="colorGame.css">
+</head>
+<body>
+<h1>
+	The Great 
+	<br>
+	<span id="colorDisplay">RGB</span> 
+	<br>
+	Color Game
+</h1>
+
+<div id="stripe">
+	<button id="reset">New Colors</button>
+	<span id="message"></span>
+	<button class="mode">Easy</button>
+	<button class="mode selected">Hard</button>
+	<button id="hint" data-toggle="modal" data-target="#myModal">Hint</button>
+</div>
+
+	<div id="container">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+
+	<div class="container">
+		<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Color Game Hint</h4>
+        </div>
+        <div class="modal-body">
+          <img src="resources/hint.png" width="200" height="200">
+          <p>Red + Green = Yellow<br>
+          	 Red + Blue = Magenta<br>
+          	 Blue + Green = Cyan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="colorGame.js"></script>
+</body>
+</html>
